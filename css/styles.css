@@ -12,6 +12,10 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.32px;
 }
 
 /*HEADER*/
@@ -30,6 +34,16 @@ body {
 
 .logo-web {
     color: var(--IRIS);
+}
+
+.link:hover,
+.link:focus {
+    color: var(--GREEN);
+}
+
+.link:hover .logo-web,
+.link:focus .logo-web {
+    color: var(--GREEN);
 }
 
 .menu {
@@ -58,9 +72,29 @@ body {
     letter-spacing: 0.32px;
 }
 
-.link:hover,
-.link:focus {
+/*PSEUDO-CLASSES OF LINKS*/
+
+.contact:hover,
+.contact:focus,
+.contact:active {
+    color: var(--RED);
+}
+
+.contact:visited {
     color: var(--IRIS);
+}
+
+.submenu:hover,
+.submenu:focus {
+    color: var(--ORANGE);
+}
+
+.submenu:active {
+    color: var(--RED);
+}
+
+.submenu:visited {
+    color: var(--GREEN);
 }
 
 .studio {
@@ -70,6 +104,14 @@ body {
 .studio:hover,
 .studio:focus {
     color: var(--ORANGE);
+}
+
+.studio:active {
+    color: var(--RED);
+}
+
+.studio:visited {
+    color: var(--GREEN);
 }
 
 /*MAIN*/
@@ -102,7 +144,8 @@ body {
 .button:hover,
 .button:focus {
     cursor: pointer;
-    color: var(--ORANGE);
+    background-color: var(--ORANGE);
+    color: var(--IRIS);
 }
 
 .button:active {
@@ -129,13 +172,6 @@ body {
     letter-spacing: 0.4px;
 }
 
-.p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 150%;
-    letter-spacing: 0.32px;
-}
-
 /*FOOTER*/
 
 .footer {
@@ -144,4 +180,14 @@ body {
 
 .footer .logo {
     color: var(--CLOUD)
+}
+
+.footer .logo:hover,
+.logo:focus {
+    color: var(--GREEN);
+}
+
+.footer .logo:hover .logo-web,
+.logo:focus .logo-web {
+    color: var(--GREEN);
 }
